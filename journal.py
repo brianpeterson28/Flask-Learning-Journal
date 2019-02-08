@@ -18,6 +18,10 @@ def index():
 def view_entries(entry_id):
     pass
 
+@app.route('/details/<int:entry_id>')
+def details(entry_id):
+    pass
+
 @app.route('/entries/edit/<int:entry_id>', methods=['GET', 'POST'])
 def edit_entry(entry_id):
     pass
@@ -29,8 +33,6 @@ def delete_entry(entry_id):
 @app.route('/entry', methods=['GET', 'POST'])
 def create_entry():
     pass 
-
-
 
 if __name__ == '__main__':
     app.run(debug=DEBUG, host=HOST, port=PORT)
