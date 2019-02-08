@@ -15,7 +15,7 @@ def index():
 
 @app.route('/entries')
 @app.route('/entries/<int:entry_id>')
-def view_entries(entry_id):
+def list(entry_id):
     pass
 
 @app.route('/details/<int:entry_id>')
