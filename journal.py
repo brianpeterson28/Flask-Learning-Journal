@@ -17,7 +17,9 @@ def index():
 def entries():
     pass
 
-
+@app.route('/entry')
+def entry():
+    pass 
 
 
 if __name__ == '__main__':
