@@ -18,6 +18,11 @@ def index():
 def entries(entry_id):
     pass
 
+@app.route('/entries/edit/<int:entry_id>', methods=['GET', 'POST'])
+def edit(entry_id):
+    pass
+
+
 @app.route('/entry')
 def entry():
     pass 
