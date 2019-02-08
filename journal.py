@@ -26,7 +26,7 @@ def edit_entry(entry_id):
 def delete_entry(entry_id):
     pass
 
-@app.route('/entry')
+@app.route('/entry', methods=['GET', 'POST'])
 def create_entry():
     pass 
 
