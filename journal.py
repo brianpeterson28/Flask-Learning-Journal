@@ -13,5 +13,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/entries', methods=['GET', 'POST'])
+def entries():
+    pass
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=DEBUG, host=HOST, port=PORT)
