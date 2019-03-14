@@ -32,7 +32,7 @@ def list():
                                  entry_text="Entry 1 text.",
                                  resources_text="Resources for Entry 1.")
     entry_list = models.Entry.select().limit(10)
-    return render_template('index.html', entry_list=entry_list)
+    return render_template('index2.html', entry_list=entry_list)
 
 '''
 CAUSING CONFLICTING URL ERROR FOR SOME REASON 
@@ -56,7 +56,8 @@ def delete_entry(entry_id):
 
 @app.route('/entry', methods=['GET', 'POST'])
 def create_entry():
-    pass 
+    form = forms.EntryForm()
+    return render_template('new2.html', form=form)
 
 if __name__ == '__main__':
     models.initialize()

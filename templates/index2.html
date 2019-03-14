@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="entry-list">
+        {% block entry_list %}
+            {% for entry in entry_list %}
+                <article>
+                <h2><a href="#">{{ entry.title }}</a></h2>
+                <time data-time="{{ entry.date }}" class="distime" datetime="{{ entry.date }}">
+                    {{ entry.date }}
+                </time>
+                </article>
+            {% endfor %}
+        {% endblock %}
+    </div>
+
+{% endblock %}
