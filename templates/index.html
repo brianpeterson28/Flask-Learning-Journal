@@ -26,7 +26,7 @@
                         {% for entry in entry_list %}
                             <article>
                             <h2><a href="#">{{ entry.title }}</a></h2>
-                            <time data-time="{{ entry.date }}" datetime="{{ entry.date}}">
+                            <time data-time="{{ entry.date }}" class="distime" datetime="{{ entry.date }}">
                                 {{ entry.date }}
                             </time>
                             </article>
